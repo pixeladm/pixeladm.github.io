@@ -19,19 +19,19 @@
 # IN THE SOFTWARE.
 
 # Project information
-site_name: AdmRedPanda
-site_url: https://admredpanda.github.io/
+site_name: PixelAdm
+site_url: https://pixeladm.github.io/
 site_author: Valentin LÉPINE
 site_description: >-
   Write your documentation in Markdown and create a professional static site in
   minutes – searchable, customizable, in 60+ languages, for all devices
 
 # Repository
-repo_name: admredpanda.github.io
-repo_url: https://github.com/AdmRedPanda/admredpanda.github.io
+repo_name: pixeladm.github.io
+repo_url: https://github.com/pixeladm/pixeladm.github.io
 
 # Copyright
-copyright: Copyright &copy; 2024 AdmRedPanda
+copyright: Copyright &copy; 2024 PixelAdm
 
 extra_css:
   - stylesheets/extra.css
@@ -41,7 +41,7 @@ theme:
   name: material
   language: en
   custom_dir: material/overrides
-  logo: 'assets/logo.webp'
+  logo: 'assets/logo.png' # 'assets/logo.webp'
   favicon: 'assets/favicon.png'
   features:
     #- announce.dismiss
@@ -78,15 +78,15 @@ theme:
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: deep orange
-      accent: deep orange
+      primary: teal # Text color
+      accent: teal #deep orange
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: custom
-      accent: deep orange
+      primary: teal #custom
+      accent: teal #deep orange
       toggle:
         icon: material/toggle-switch-off
         name: Switch to system preference
@@ -108,7 +108,7 @@ plugins:
         as_creation: date.created
         as_update: date.updated
   - git-committers:
-      repository: admredpanda/admredpanda.github.io
+      repository: pixeladm/pixeladm.github.io
       branch: main
   - git-revision-date-localized:
       #enable_creation_date: true
@@ -121,7 +121,7 @@ hooks:
 
 # Additional configuration
 extra:
-  homepage: https://admredpanda.github.io/
+  homepage: https://pixeladm.github.io/
   status:
     new: Recently added
     deprecated: Deprecated
@@ -155,9 +155,9 @@ extra:
       name: send me an email
       link: mailto:vlepineadm@outlook.com 
     - icon: material/rss
-      link: 'https://admredpanda.github.io/feed_rss_created.xml'
+      link: 'https://pixeladm.github.io/feed_rss_created.xml'
     - icon: fontawesome/brands/github
-      link: https://github.com/admredpanda/
+      link: https://github.com/pixeladm/
     - icon: fontawesome/brands/x-twitter
       link: https://twitter.com/val0ch3
     - icon: fontawesome/brands/linkedin
@@ -207,7 +207,7 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+          format: '!!python/name:pymdownx.superfences.fence_code_format'
   - pymdownx.tabbed:
       alternate_style: true
       combine_header_slug: true

@@ -1,6 +1,6 @@
-# admredpanda.github.io
+# pixeladm.github.io
 
-[![Deploy static content to Pages](https://github.com/admredpanda/admredpanda.github.io/actions/workflows/mkdocs-build-sanity-check.yml/badge.svg)](https://github.com/admredpanda/admredpanda.github.io/actions/workflows/mkdocs-build-sanity-check.yml)
+[![Deploy static content to Pages](https://github.com/pixeladm/pixeladm.github.io/actions/workflows/mkdocs-build-sanity-check.yml/badge.svg)](https://github.com/pixeladm/pixeladm.github.io/actions/workflows/mkdocs-build-sanity-check.yml)
 
 - Web Hosting : [GitHub](https://pages.github.com/)
 - MkDocs Material : [Github](https://github.com/squidfunk/mkdocs-material)
