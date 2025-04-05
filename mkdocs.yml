@@ -111,7 +111,6 @@ plugins:
   - git-committers:
       repository: pixeladm/pixeladm.github.io
       branch: main
-      token: !!python/object/apply:os.getenv ["MKDOCS_GIT_COMMITTERS_APIKEY"]
   - git-revision-date-localized:
       enable_creation_date: true
       type: date
