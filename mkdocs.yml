@@ -73,12 +73,12 @@ theme:
     - toc.follow
     #- toc.integrate  
   palette:
-    #- media: "(prefers-color-scheme)"
-    #  toggle:
-    #    icon: material/link
-    #    name: Switch to light mode
-    - media: "(prefers-color-scheme: light)"
+    - media: "(prefers-color-scheme)"
       scheme: default
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
       primary: teal # Text color
       accent: teal #deep orange
       toggle:

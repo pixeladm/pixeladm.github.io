@@ -38,12 +38,20 @@ jobs:
         with:
           python-version: 3.11
           architecture: x64
-
+          
       - name: Install requirements
         run: python3 -m pip install -r requirements.txt
 
       - name: Install mkdocs-material
         run: python3 -m pip install mkdocs-material
+
+
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          sparse-checkout: |
+            docs
+            includes
 
       - name: Test mkdocs builds
         run: python3 -m mkdocs build
