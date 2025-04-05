@@ -74,18 +74,19 @@ theme:
     #- toc.integrate  
   palette:
     - media: "(prefers-color-scheme)"
-      scheme: default
+      scheme: slate
       toggle:
         icon: material/brightness-auto
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
+      scheme: slate
       primary: teal # Text color
       accent: teal #deep orange
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+      scheme: default
       primary: teal #custom
       accent: teal #deep orange
       toggle:
@@ -111,6 +112,7 @@ plugins:
   - git-committers:
       repository: pixeladm/pixeladm.github.io
       branch: main
+      token: !!python/object/apply:os.getenv ["MKDOCS_GIT_COMMITTERS_APIKEY"]
   - git-revision-date-localized:
       enable_creation_date: true
       type: date
