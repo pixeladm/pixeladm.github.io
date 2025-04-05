@@ -74,23 +74,22 @@ theme:
     #- toc.integrate  
   palette:
     - media: "(prefers-color-scheme)"
-      scheme: slate
       toggle:
-        icon: material/brightness-auto
+        icon: material/brightness-4
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: slate
+      scheme: default
       primary: teal # Text color
       accent: teal #deep orange
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: default
+      scheme: slate
       primary: teal #custom
       accent: teal #deep orange
       toggle:
-        icon: material/brightness-4
+        icon: material/brightness-auto
         name: Switch to system preference
   icon:
     repo: fontawesome/brands/github
