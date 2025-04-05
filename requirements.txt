@@ -10,6 +10,7 @@ mkdocs-material-extensions>=1.1
 pygments>=2.14
 pymdown-extensions>=9.9.1
 requests>=2.26
+regex>=2022.4
 
 # My own dependencies
 mkdocs-git-committers-plugin-2

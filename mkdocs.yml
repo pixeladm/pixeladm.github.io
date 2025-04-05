@@ -100,10 +100,7 @@ plugins:
       post_date_format: full
       post_url_format: "{slug}"
   - search:
-      #separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-      lang: en
-      separator: '[\s\-\.]+'
-      prebuild_index: true
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - minify:
       minify_html: true
   - rss:
