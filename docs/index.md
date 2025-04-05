@@ -25,7 +25,7 @@ Welcome, fellow geek :wave: If you're impatient, just start here :point_down:
 
     Been around for a while? Got a high pain threshold? Jump in!
 
-- **Geek out in :fontawesome-brands-discord:{ .discord .lg .middle } [Discord](http://chat.funkypenguin.co.nz)**
+- **Geek out in :material-post:{ .post .lg .middle } [Blog](blog/index.md)**
 
     ---
 

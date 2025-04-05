@@ -1,6 +1,1 @@
----
-hide:
-  - feedback
-
----
 

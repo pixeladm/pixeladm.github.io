@@ -66,29 +66,30 @@ theme:
     - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
+    - navigation.path
     - search.highlight
     - search.share
     - search.suggest
     - toc.follow
     #- toc.integrate  
   palette:
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/link
-        name: Switch to light mode
+    #- media: "(prefers-color-scheme)"
+    #  toggle:
+    #    icon: material/link
+    #    name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: teal # Text color
       accent: teal #deep orange
       toggle:
-        icon: material/toggle-switch
+        icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: teal #custom
       accent: teal #deep orange
       toggle:
-        icon: material/toggle-switch-off
+        icon: material/brightness-4
         name: Switch to system preference
   icon:
     repo: fontawesome/brands/github
@@ -110,8 +111,9 @@ plugins:
   - git-committers:
       repository: pixeladm/pixeladm.github.io
       branch: main
+      token: !!python/object/apply:os.getenv ["MKDOCS_GIT_COMMITTERS_APIKEY"]
   - git-revision-date-localized:
-      #enable_creation_date: true
+      enable_creation_date: true
       type: date
 
 # Hooks
